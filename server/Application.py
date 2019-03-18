@@ -11,6 +11,6 @@ def hello():
 
 
 if __name__ == '__main__':
+    app.run(debug=True)
     source = DataSource()
     source.print_greeting('message')
-    app.run(debug=True)
