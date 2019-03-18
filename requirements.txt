@@ -1,0 +1,3 @@
+flask==1.0.2
+neo4j==1.7.2
+neomodel==3.3.1
