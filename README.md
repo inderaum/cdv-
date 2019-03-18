@@ -1,6 +1,6 @@
 # cdvplusplus
 ## Dependencies
-Use `install -r requirements.txt` to install the required dependencies for this project
+Use `pip install -r requirements.txt` to install the required dependencies for this project
 ## Database
 You have to provide a valid uri, username and password to use the neo4j driver in this application.
 
