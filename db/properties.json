@@ -1,5 +1,0 @@
-{
-	"uri" : "bolt://neo4j:cdv@192.168.99.100:7687",
-	"user" : "neo4j",
-	"password" : "admin"
-}
