@@ -34,7 +34,11 @@ def escape_special_characters():
                                       "NOTE": object,
                                       "SEK": int,
                                       "WAHL": int})
-        for column in raw_data:
-            print(raw_data[column])
+        avg_col = raw_data.groupby(["MUSIKART", "JAHR"]).median()
+        # print(avg_col.loc["BLUES",1977])
+        for cell in raw_data.iteritems():
+            # if cell[1]==1977:
+            print(cell[1])
+
 
 escape_special_characters()
