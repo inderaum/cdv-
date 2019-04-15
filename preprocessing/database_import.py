@@ -37,9 +37,10 @@ def escape_special_characters():
                                       "WAHL": int})
 
         for column in raw_data:
-            raw_data[column] = raw_data[column].str.replace('"', '\\"')
+            if raw_data[column].dtype == 'object':
+                raw_data[column] = raw_data[column].str.replace('"', '\\"')
 
-        raw_data.to_csv('../data/escaped_data.csv')
+        raw_data.to_csv('../data/escaped_data.csv', sep=';', encoding='latin1', na_rep=0)
 
 
-escape_special_characters()
+# escape_special_characters()
